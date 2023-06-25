@@ -45,12 +45,12 @@ main {
 }
 
 .logo {
+    justify-self: start;
     display: flex;
-    justify-self: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
-    border-radius: 50%;
+    border-radius: .5rem;
     background-color: var(--color-four);
 }
 
