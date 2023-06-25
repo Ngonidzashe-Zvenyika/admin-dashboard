@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: Arial, sans-serif, system-ui, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Merienda', cursive;
+    --color-one: white;
+    --color-two: #020101;
+    --color-three: #CEC9CD;
+    --color-four: #f2a7ac87;
+    --color-five: #6fc5ff;
+}
+
+body {
+    font-size: 1.4rem;
+    max-width: 2560px;
+    padding: 2rem;
+    background-color: var(--color-one);
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.image {
+    display: block;
+}
+
+.icon {
+    height: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 300px 1fr minmax(300px, 350px);
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-four);
+}
+
+.logo .icon {
+    height: 3rem;
+}
+
+.search-bar {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    border: 3px solid var(--color-two);
+    border-radius: .5rem;
+    background-color: var(--color-one);
+}
+
+.search-bar .icon {
+    margin-bottom: .2rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    appearance: none;
+    font-size: 1.7rem;
+    font-family: Arial, sans-serif, system-ui, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Merienda', cursive;
+    width: calc(100% - 5rem);
+    background-color: var(--color-one);
+}
+
+input:focus::placeholder {
+    visibility: hidden;
+}
+
+.profile-image {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image span {
+    font-weight: 600;
+}
+
+.profile-image .image,
+.notifications .image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-two);
+}
+
+.profile-image .image:hover {
+    cursor: pointer;
+    outline: 3px solid var(--color-two);
+    outline-offset: 3px;
+}
+
+.profile-image span:hover {
+    cursor: pointer;
+}
+
+nav {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    display: grid;
+}
+
+nav ul {
+    display: grid;
+    gap: 2rem;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--color-three);
+    box-shadow: 3px 3px 3px var(--color-two);
+}
+
+nav li:hover {
+    cursor: pointer;
+    text-decoration: underline 2px solid var(--color-two);
+}
+
+.properties {
+    text-align: center;
+}
+
+.properties h4 {
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 3px var(--color-two);
+    background-color: var(--color-four);
+}
+
+.properties li {
+    padding: 1rem;
+    min-height: 400px;
+}
+
+.properties .image {
+    width: 100%;
+    height: calc(100% - 6rem);
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.properties .image:hover {
+    box-shadow: 5px 5px 3px var(--color-five);
+}
+
+.properties p {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem 0rem;
+}
+
+.properties .icon:hover {
+    cursor: pointer;
+}
+
+.properties .icon:active {
+    height: 1.6rem;
+}
+
+.occupied ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: .5rem;
+}
+
+.vacant ul,
+ .reserved ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5rem;
+}
+
+.notifications {
+    position: sticky;
+    top: 2rem;
+    display: grid;
+    align-self: start;
+}
+
+.notifications ul {
+    display: grid;
+    gap: 2rem;
+}
+
+.notifications li {
+    padding: .75rem;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 3px var(--color-two);
+    background-color: var(--color-three);
+}
+
+.notifications li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.messages,
+.dates {
+    display: grid;
+    gap: .5rem;
+}
+
+.messages div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 2px dotted var(--color-two);
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.messages div:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-two);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.messages p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dates p {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .25rem;
+    border: 3px solid var(--color-three);
+    border-radius: 3rem;
+}
+
+.dates p:hover  {
+    cursor: default;
+    border-color: var(--color-two);
+    padding-left: 3rem;
+    border-radius: 3rem;
+}
+
+footer {
+    grid-column: 2 / 3;
+    text-align: center;
+}
