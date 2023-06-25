@@ -4,77 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Admin Dashboard</title>
-    <divnk rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <main>
+        <div class="logo">
+            <img class="icon" src="./images/airplane.svg" alt="logo">
+        </div>
+
+        <div class="search-bar">
+            <img class="icon" src="./images/search.svg" alt="search">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="profile-image">
+            <span>John Doe</span><img class="image" src="./images/john.jpg" alt="user">
+        </div>
+
         <nav>
-            <div><img src="" alt=""><h1>Estates</h1></div>
-            <div><img src="" alt=""><span>Home</span></div>
-            <div><img src="" alt=""><span>Manage Properties</span></div>
-            <div><img src="" alt=""><span>Booking History</span></div>
-            <div><img src="" alt=""><span>Settings</span></div>
-            <div><img src="" alt=""><span>Support</span></div>
+            <ul>
+                <li>
+                    <img class="icon" src="./images/list.svg" alt="list">
+                    <span>Manage Properties</span>
+                </li>
+                <li>
+                    <img class="icon" src="./images/time.svg" alt="time">
+                    <span>Booking History</span>
+                </li>
+                <li>
+                    <img class="icon" src="./images/settings.svg" alt="settings">
+                    <span>Settings</span>
+                </li>
+                <li>
+                    <img class="icon" src="./images/help-circle.svg" alt="help-circle">
+                    <span>Support</span>
+                </li>
+            </ul>
         </nav>
-        <main>
-            <section class="your-profile">
-                <h3>Profile</h3>
-                <div>
-                    <span>
-                        <img src="" alt="">
-                        <input type="text">
-                    </span>
-                    <span>John Doe</span>
-                    <img src="" alt="">
-                </div>
-            </section>
 
-            <section class="notifications">
-                <div>
-                    <img src="" alt="">
+        <section class="properties">
+            <div class="occupied">
+                <h4>Occupied Properties</h4>
+                <ul>
+                    <li>
+                        <img class="image" src="./images/one.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Stilt Conservatory</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/two.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Fairies' Place</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="vacant">
+                <h4>Vacant Properties</h4>
+                <ul>
+                    <li>
+                        <img class="image" src="./images/four.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Siberian Sleep-Away</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/five.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Lakeside Stacks</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/six.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Pine Grove Picnic</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/seven.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Mountain View</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/eight.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Sunset Headland</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/nine.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Luxurious Hobbit</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="reserved">
+                <h4>Reserved Properties</h4>
+                <ul>
+                    <li>
+                        <img class="image" src="./images/ten.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Lily's Place</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/eleven.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Fisherman's Den</span>
+                    </li>
+                    <li>
+                        <img class="image" src="./images/twelve.jpg" alt="property">
+                        <p>
+                            <img class="icon" src="./images/star.svg" alt="star">
+                            <img class="icon" src="./images/calendar.svg" alt="calendar">
+                            <img class="icon" src="./images/information-circle.svg" alt="information-circle">
+                        </p>
+                        <span>Sunrise on Stilts</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="notifications">
+            <ul>
+                <li>
                     <h3>Notifications</h3>
-                </div>
-                <div>
+                    <img class="icon" src="./images/notifications.svg" alt="notifications">
+                </li>
+                <li  class="messages">
                     <h4>Messages</h4>
-                    <div><img src="" alt=""><span>Joe Bloggs: Hi John. May we check in at 3pm tomorrow?</span></div>
-                    <div><img src="" alt=""><span>Sue Donim: Thank you so much!</span></div>
-                </div>
-                <div>
+                    <div>
+                        <img class="image" src="./images/joe.jpg" alt="client message">
+                        <p>
+                            <span class="bold">Joe Bloggs</span><br>And the check in time?
+                        </p>
+                    </div>
+                    <div>
+                        <img class="image" src="./images/sue.jpg" alt="client message">
+                        <p>
+                            <span class="bold">Sue Donim</span><br>Thank you!
+                        </p>
+                    </div>
+                </li>
+                <li class="dates">
                     <h4>Important Dates</h4>
-                    <div>21 June</div><span></span>
-                    <div>23 June</div><span></span>
-                    <div>23 June</div><span></span>
-                    <div>25 June</div><span></span>
-                </div>
-            </section>
-
-            <section class="your-properties">
-                <h3>Properties</h3>
-                <div id="booked">
-                    <h4>Booked</h4>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="vacant">
-                    <h4>Vacant</h4>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="pending-payment">
-                    <h4>Awaiting Payment</h4>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </section>
-        </main>
-        <footer></footer>
-    </div>
-    
+                    <p>21 June <img class="icon" src="./images/enter.svg" alt="enter"></p>
+                    <p>23 June <img class="icon" src="./images/enter.svg" alt="enter"></p>
+                    <p>24 June <img class="icon" src="./images/enter.svg" alt="enter"></p>
+                    <p>29 June <img class="icon" src="./images/enter.svg" alt="enter"></p>
+                </li>
+            </ul>
+        </section>   
+        <footer>Created by <a href="">Ngonidzashe Zvenyika</a></footer>
+    </main>  
 </body>
 </html>
